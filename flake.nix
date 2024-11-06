@@ -46,7 +46,7 @@
             allowUnfree = true;
             overlays = [
               (devshell.overlay)
-              (self.overlay)
+              (self.overlays.default)
             ];
             allowInsecurePredicate = pkg: pkg.pname == "python";
           };
